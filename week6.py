@@ -69,7 +69,7 @@ my_html = '<table>{}</table>'.format(''.join(
 
 # ... for j in M))   # this should complement the assignment of M above. 
 
-print(my_html)
+print(my_html) # Try 2 git
 
 # Robin's code: writing file to the current folder (where anaconda python is first executed in this session)
 # with open('table.html', 'w') as f:
