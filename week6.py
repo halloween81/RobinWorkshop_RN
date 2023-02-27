@@ -61,9 +61,13 @@ def get_fuel(product_id, suburb, day):
 # --------------------------------------------------------
 # This is the shorter way:
 
+# M = get_fuel(1, 'Cloverdale', 'Today')  # This is for debugging mode, to see what's inside M
+    
 my_html = '<table>{}</table>'.format(''.join(
     '<tr><td>{brand}</td><td>{price}</td><td>{location}</td><td>{address}</td><td>{date}</td><td>{custom}</td><td>{title}</td></tr>'.format(**j)
     for j in get_fuel(1, 'Cloverdale', 'Today')))
+
+# ... for j in M))   # this should complement the assignment of M above. 
 
 print(my_html)
 
